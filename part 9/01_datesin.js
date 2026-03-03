@@ -1,9 +1,9 @@
 //Dates
 let myDate = new Date();
-console.log(myDate.toString());
-console.log(myDate.toDateString());
-console.log(myDate.toLocaleDateString());
-console.log(typeof myDate);
+console.log("1"+myDate.toString());
+console.log("2"+myDate.toDateString());
+console.log("3"+myDate.toLocaleDateString());
+console.log("4"+typeof myDate);
 
 console.log("************");
 

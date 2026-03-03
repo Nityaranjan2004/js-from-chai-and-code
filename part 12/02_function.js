@@ -27,12 +27,13 @@ const user={
     prise:122
 };
 function handelObject(anyobject){
-    console.log(`username is ${anyobject.username} and prise id ${anyobject.prise}`);
+    console.log(`username is ${anyobject.username} and prise id ${anyobject.prise} ${anyobject.age}`);
 }
 handelObject(user);
 handelObject({
     username:"sam",
-    prise:134
+    prise:134,
+    age:23
 });
 
 console.log("-----------------------------------------------------");

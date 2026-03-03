@@ -20,6 +20,7 @@ console.log(myArr.indexOf(5));
 
 console.log(myArr);
 
+console.log("-----------------");
 
 const newArray = myArr.join();
 console.log(newArray);
@@ -55,7 +56,7 @@ console.log("****************");
 const all_hero = dc_hero.concat(marvel_hero);
 console.log(all_hero);
 
-console.log("************");
+console.log("************11");
 const all_new_hero = [...marvel_hero, ...dc_hero];
 console.log(all_new_hero);
 
@@ -67,7 +68,9 @@ console.log(real_another_array);
 console.log("**********************");
 
 
-console.log(Array.from(nitya));
+console.log(Array.from(myArr[2]));
+console.log("---------------------------------");
+
 
 
 
