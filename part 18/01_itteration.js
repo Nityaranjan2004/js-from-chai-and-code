@@ -15,7 +15,7 @@ for (let i = 0; i <=10; i++) {
 
 
 let myArray = ["flash","batman","super man"];
-//console.log(myArray.length);
+    //console.log(myArray.length);
 for (let i = 0; i < myArray.length; i++) {
     const element = myArray[i];
     //console.log(element);
@@ -25,11 +25,11 @@ for (let i = 0; i < myArray.length; i++) {
 //break and continue
 for (let index = 1; index <= 20; index++) {
     if (index==5) {
-        console.log(`dected 5`);
+        //console.log(`dected 5`);
         //break;
         continue;
     }
-   console.log(`value of i is ${index}`);
+   //console.log(`value of i is ${index}`);
 }
 
 

@@ -1,0 +1,70 @@
+Value	State	            Description
+0	    UNSENT	            Client has been created. open() not called yet.
+1	    OPENED	            open() has been called.
+2	    HEADERS_RECEIVED	send() has been called, and headers and status are available.
+3	    LOADING	            Downloading; responseText holds partial data.
+4	    DONE	            The operation is complete.
+
+
+const xhr = new XMLHttpRequest();
+XMLHttpRequest() is the class where we sent or recive all the 
+data request
+
+1️⃣ Why JavaScript is called an Asynchronous Language
+
+JavaScript is single-threaded (one task at a time), but it can handle asynchronous
+operations using the Event Loop, Callbacks, Promises, and
+Async/Await.
+
+This design allows JS to not block the main thread while waiting for slow operations like:
+
+API requests 🌐
+
+Database queries 💾
+
+File reading 📂
+
+Timers ⏱
+
+Instead of waiting, JavaScript continues executing the next code,
+and when the task finishes it comes back through the event loop.
+
+Even though setTimeout appears in the middle, JavaScript does not wait for 2 seconds.
+It schedules the task and continues execution.
+
+That behavior is asynchronous.
+
+3️⃣ Example of Synchronous Code
+console.log("Task 1");
+console.log("Task 2");
+console.log("Task 3");
+
+Output
+
+Task 1
+Task 2
+Task 3
+
+4️⃣ Example of Asynchronous Code
+console.log("Task 1");
+
+setTimeout(() => {
+    console.log("Task 2");
+}, 2000);
+
+console.log("Task 3");
+
+Output
+
+Task 1
+Task 3
+Task 2
+
+6️⃣ Common Asynchronous Features in JS
+
+setTimeout()
+setInterval()
+fetch()
+Promise
+async / await
+Event Listeners

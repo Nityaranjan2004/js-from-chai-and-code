@@ -1,0 +1,14 @@
+java script is a synchronous and single threaded language
+
+execution context
+	console.log 1
+	console.log 2
+	    |
+	    |	
+
+        call stack       memeory heap
+
+Blocking code vs non Blocking code
+blocking code->Block the flow of the program(read file sync)
+non blocking code->does not block execution(read file Async)
+

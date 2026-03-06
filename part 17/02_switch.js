@@ -43,8 +43,8 @@ if(Object.keys(emptyobj).length === 0){
 let val1;
 //val1 = 1 ?? 10;
 //val1 = null ?? 10
-//val1 = undefined ?? 12
-val1 = null ?? 12 ?? 23
+val1 = undefined ?? 12
+//val1 = null ?? 12 ?? 23
 console.log(val1);
 
 
