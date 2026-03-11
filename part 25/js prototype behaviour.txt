@@ -1,0 +1,33 @@
+ja default behaviour is prototypeal behaviour.if js find something it go through parent grant parent etc until get null value
+this,class are given by prototype so we all work on it
+
+
+Array------->object------------>null
+String------->object------------>null
+function------->object------------>null
+every thing in javascript is an object and every object is refer to the null
+
+
+this is set the current context like this.username = username
+
+
+console.log("------------------------------------------");
+
+function createUser(username,score){
+    this.username = username;
+    this.score = score;
+}
+
+
+createUser.prototype.increment = function(){
+    this.score++;
+}
+
+
+const chai = createUser("chai",25);
+const tea = createUser("tea",350);
+
+here chai and tea call tha same function but problem is everytime the score is increase but i want to increase score indiviswal
+so we use this.score++ so it seside wheather score increase for chai and tea
+
+

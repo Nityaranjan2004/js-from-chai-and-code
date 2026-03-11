@@ -1,0 +1,26 @@
+🔹 fetch() in JavaScript
+
+fetch() is a built-in JavaScript function used to make HTTP 
+requests (GET, POST, PUT, DELETE, etc.) to a server or API.
+It returns a Promise.
+
+It is commonly used to get data from APIs or send data to a backend
+
+fetch has two part 
+1.variable and memory resorve
+2.web browser/node
+
+variable and memory resorve has three part
+1.data:______
+2.onFulfill[]->promise ka resolve
+3.onRejection[]->promise ka rejection   these two array are private field we do not access it
+
+
+web browser and node has either handel web base api or node base api
+then go to network request (it is done by either browser provide resource or node provide resource)
+
+
+if network request done then it go to the onFulfill[]
+if network request is not done it go to the onRejection
+
+there are many function present in the onFulfill[] and onRejection[] which is responcible to fulfill the data:______

@@ -1,0 +1,15 @@
+js and classes
+
+oop
+object ->collection of properties and method
+
+constructor function
+prototypes
+classes
+instances(new this)
+
+4 pillers
+abstraction
+encalsulation
+inheritance
+polymorphysim

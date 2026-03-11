@@ -50,30 +50,26 @@ const promisefour = new Promise(function(resolve,reject){
         }
     },1000)
 })
-
-
 //chaining
 const username = promisefour.then((user)=>{
-   // console.log(user);
+    //console.log(user);
     return user.username; 
 })
 .then((username)=>{
-    //console.log(username);
-    
+    //console.log(username); 
 })
 .catch(function(error){
     //console.log(error);
 })
 .finally(()=>console.log("The promise is either resolved or rejected"))
-
-console.log(username);
+//console.log(username);
 
 
 console.log("-------------------------------------");
 
 const promisefive = new Promise(function(resolve,reject){
     setTimeout(function(){
-        let error = true;
+        let error = false;
         if(!error){
             resolve({username:"java",password:"123"})
         }
@@ -86,9 +82,9 @@ const promisefive = new Promise(function(resolve,reject){
 async function consumePromiseFive(){
     try {
         const responce = await promisefive
-        console.log(responce);
+        //console.log(responce);
     } catch (error) {
-        console.log(error);
+        //console.log(error);
     }
 }
 
@@ -103,7 +99,6 @@ async function getAllUser(){
         //console.log(data);
     } catch (error) {
         //console.log("E:",error);
-        
     }
 }
 
@@ -118,12 +113,10 @@ fetch('https://api.github.com/users/hiteshchoudhary')
     return responce.json();
 })
 .then((data)=>{
-    console.log(data);
-    
+    console.log(data); 
 })
 .catch((error)=>{
-    console.log(error);
-    
+    console.log(error);  
 })
 
 
